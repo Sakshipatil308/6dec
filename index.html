@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="x-UA-Compatible"Content="IE=EDGE">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="index.css"/>
+    </head>
+    <body>
+        <h1>Admission form</h1>
+        <div class="form_container">
+        <form autocomplete="off">
+           <h3>Personal info</h3>
+           <input type="text"  class="inline" name="f_name" placeholder="First Name" autocomplete="off" required/>
+           <input type="text"  class="inline" name="l_name" placeholder="Last Name" />
+           <br>
+           <input type="email" class="inline" name="mail" placeholder="Email" required/>
+           <input type="number" class="inline" name="phone" placeholder="Phone Number"required pattern="[0-9]{4}-[0-9]{3}-[0-9]{3}"/>
+           <select class="inline" name="gender" title="gender">
+            <option selected disabled>Select Gender</option>
+               <option>Male</option>
+               <option>Female</option>
+               <option>Others</option>
+           </select>
+           <input class="inline" type="date" name="date_of_birth" max="2021-6-12"/>
+           <textarea name="address" placeholder="Address"></textarea>
+           <h3>Educational info</h3>
+           <select class="inline" name="degree" title="degree">
+               <option selected disabled>Select Degree</option>
+               <optgroup label="Bachlers">
+                   <option>1</option>
+                   <option>2</option>
+                   <option>3</option>
+               </optgroup>
+               <optgroup label="Masters">
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+               </optgroup>
+           </select>
+           <input type="text" class="inline" name="college" placeholder="College name" />
+           <input type="number" class="inline" name="graduation_year" placeholder="Year of Graduation" min="2010" max="2022"/>
+           <input type="number" class="inline" name="percentage" placeholder="Percentage" min="50" step="5"/>
+           <h4>Course Details</h4>
+           <p>Which level do you want to enroll?</p>
+           <input type="radio" class="inline" name="course">Fundamental
+           <br>
+           <input type="radio" class="inline"name="course">Advance
+           <br>
+           <br>
+           <p>Which course do you want to enroll?</p>
+           <input type="checkbox" class="inline" >DSA
+           <br>
+           <input type="checkbox" class="inline" >WEB
+           <br>
+           <input type="file"/>
+
+           <hr>
+           <input type="submit" Value="Apply"class="inline">
+           <input type="reset"class="inline"/>
+        </form>
+        </div>
+    </body>
+</html>
